@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Início</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/companies.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+
+<body>
+    <header class="header">
+        <nav id="menu-h">
+            <ul class="m-auto mb-0">
+                <li><a href="/">Tela Inicial</a></li>
+
+                <li><a href="/entrar">Entrar</a></li>
+
+                <li><a href="/cadastrar">Cadastrar</a></li>
+
+            </ul>
+        </nav>
+        <div class="d-flex flex-wrap align-items-center">
+            <div class="mx-auto p-3">
+                <img src="imagens/imagem3.jpg" class="logo">
+            </div>
+            <div class="mx-auto p-3">
+                <form action="/vagas/">
+                    <div class="input-group mb-3">
+                        <input type="search" name="query" class="form-control" placeholder="Nome da empresa/área" aria-label="Nome da empresa/área">
+                        <div class="input-group-append">
+                            <button class="btn btn-light"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container main">
+        <!--Duas colunas do carrosel e dos botões-->
+        <div class="main_area">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/carrousel_003.jpg" class="d-block w-100" alt="Descrição 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/carrousel_002.jpg" class="d-block w-100" alt="Descrição 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/carrousel_001.jpg" class="d-block w-100" alt="Descrição 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center p-4">
+            <button class="btn btn-lg btn-warning m-3 px-5" data-toggle="modal" data-target="#sobre-modal">Sobre a empresa</button>
+            <a class="btn btn-lg btn-warning m-3 px-5" href="#" role="button">Localização</a>
+        </div>
+
+        </div>
+
+        <!--Card de anuncio-->
+
+        <div class="row">
+            <div class="d-flex align-items-stretch col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" data-company="vale">
+                    <div class="card-img-container">
+                        <img src="imagens/download.png" class="card-vagas-img card-img-top" alt="Apartamento 1">
+                    </div>
+                    <div class="card-vagas-body card-body">
+                        <h5 class="card-title">Vale</h5>
+                        <p class="card-text">É uma mineradora multinacional brasileira e uma das maiores operadoras de logística do país. Além de ser uma das maiores empresas de mineração do mundo e também a maior produtora de minério de ferro, de pelotas e de níquel do Mundo.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="vagas-button btn btn-warning">Ver Vagas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-stretch col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" data-company="arcelorMittal">
+                    <div class="card-img-container">
+                        <img src="imagens/unnamed.jpg" class="card-img-top" alt="Apartamento 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">ArcelorMittal</h5>
+                        <p class="card-text">A ArcelorMittal Brasil opera na produção de aços no país, com capacidade instalada superior a 12,5 milhões de toneladas/ano. Com plantas industriais em seis estados, emprega cerca de 17 mil pessoas. </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="vagas-button btn btn-warning">Ver Vagas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-stretch col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" data-company="google">
+                    <div class="card-img-container">
+                        <img src="imagens/Google.jpg" class="card-img-top" alt="Apartamento 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Google</h5>
+                        <p class="card-text">É uma empresa multinacional de serviços online e software dos Estados Unidos. O Google hospeda e desenvolve uma série de serviços e produtos baseados na internet e gera lucro principalmente através da publicidade pelo AdWords.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="vagas-button btn btn-warning">Ver Vagas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-stretch col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" data-company="microsoft">
+                    <div class="card-img-container">
+                        <img src="imagens/ms-20761-querying-data-with-transact-sql-em-18-04-2020-aos-sabados.png" class="card-img-top" alt="Apartamento 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Microsoft</h5>
+                        <p class="card-text">É uma empresa transnacional americana com sede em Redmond, Washington, que desenvolve, fabrica, licencia, apoia e vende softwares de computador, produtos eletrônicos, computadores e serviços pessoais.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="vagas-button btn btn-warning">Ver Vagas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-stretch col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" data-company="apple">
+                    <div class="card-img-container">
+                        <img src="imagens/logo-da-apple-voce-sabe-como-surgiu-o-simbolo-da-maca-mordida-1_xl.jpg" class="card-img-top" alt="Apartamento 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Apple</h5>
+                        <p class="card-text">É uma empresa multinacional norte-americana que tem o objetivo de projetar e comercializar produtos eletrônicos de consumo, software de computador e computadores pessoais. Os produtos de hardware mais conhecidos da empresa incluem
+                            a linha de computadores Macintosh, iPod, iPhone, iPad, Apple TV e o Apple Watch.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="vagas-button btn btn-warning">Ver Vagas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-stretch col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" data-company="bankOfAmerica">
+                    <div class="card-img-container">
+                        <img src="imagens/new-bank-of-america-logo_750xx3000-1688-0-356.jpg" class="card-img-top" alt="Apartamento 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bank of America</h5>
+                        <p class="card-text">É a segunda maior holding bancária nos Estados Unidos. Desde 2010, o Bank of America é a quinta maior empresa americana em termos de receitas totais, e a terceira maior empresa não petrolífera dos Estados Unidos.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="vagas-button btn btn-warning">Ver Vagas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-stretch col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" data-company="amazon">
+                    <div class="card-img-container">
+                        <img src="imagens/amazon-logo-preview.png" class="card-img-top" alt="Apartamento 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Amazon</h5>
+                        <p class="card-text">A companhia se concentra no e-commerce, computação em nuvem, streaming e inteligência artificial. É considerada uma das cinco grandes empresas de tecnologia, juntamente com Google, Apple, Microsoft e Facebook. </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="vagas-button btn btn-warning">Ver Vagas</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-stretch col-12 col-sm-12 col-md-6 col-lg-3">
+                <div class="card" data-company="dell">
+                    <div class="card-img-container">
+                        <img src="imagens/Dell_logo_2016.svg.png" class="card-img-top" alt="Apartamento 1">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dell</h5>
+                        <p class="card-text">Dell desenvolve, produz, dá suporte e vende uma grande variedade de computadores pessoais, servidores, notebooks, dispositivos de armazenamento, switches de rede, PDAs, software, periféricos e mais. </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="vagas-button btn btn-warning">Ver Vagas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark py-3">
+        <p class="lead text-center text-light m-0">TECHLINK - Todos os direitos reservados - 2021</p>
+    </footer>
+    <div class="modal fade" id="sobre-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">TECHLINK</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Nosso objetivo é desenvolver uma plataforma em que empresas iniciantes/startups possam adicionar o seu “perfil de empresa” (cultura interna, políticas internas e as características do emprego ideal), além de que os candidatos aos empregados
+                        coloque suas informações pessoais, o que permitirá que o software realize um “match” entre as vagas abertas e aos candidatos mais adequados.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aplicar-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="company-name" class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <p>Requisitos:</p>
+                    <ul id="company-requirements"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <a id="company-apply" class="btn btn-primary">Aplicar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

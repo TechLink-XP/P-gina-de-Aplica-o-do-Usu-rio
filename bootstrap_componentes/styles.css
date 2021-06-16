@@ -1,0 +1,209 @@
+.header {
+    background: rgb(5, 5, 5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.memu_area {
+    margin-top: 30px;
+}
+
+.memu_area nav a {
+    background-color: #3cd428;
+    color: rgb(19, 18, 18);
+    margin-bottom: 10px;
+}
+
+.memu_area nav a:hover {
+    background-color: #2ec929;
+}
+
+.active {
+    background-color: #225322 !important;
+}
+
+.logo {
+    width: 150px;
+}
+
+.main {}
+
+.main .card {
+    margin-bottom: 15px;
+}
+
+.main_area {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 10px;
+    background: rgb(3, 20, 1);
+    color: white;
+}
+
+.footer_area {
+    padding: 20px;
+    text-align: center;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+.memu_area2 {
+    margin-top: 30px;
+}
+
+.memu_area2 nav a {
+    background-color: #eea010;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.memu_area2 nav a:hover {
+    background-color: #eeb868;
+}
+
+input,
+label {
+    display: block;
+    outline: none;
+    width: 100%;
+}
+
+a {
+    color: #E60084;
+}
+
+
+/* form */
+
+#main-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing {
+    margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color: #E60084;
+}
+
+input[type="submit"] {
+    background-color: #E60084;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement,
+#agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+}
+
+.template {
+    display: none;
+}
+
+#menu-h {
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+.card-img-container {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.card-img-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
